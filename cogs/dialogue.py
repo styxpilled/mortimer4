@@ -1,10 +1,10 @@
 from discord.ext import commands
 from lib.env import CONFIG
-from lib.log import logConsole
+from lib.log import log_console
 
 from fuzzywuzzy import fuzz
 
-log = logConsole()
+log = log_console()
 
 class Dialogue(commands.Cog):
     def __init__(self, bot):

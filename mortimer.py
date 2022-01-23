@@ -6,11 +6,11 @@ from discord import Intents
 from discord.ext import commands
 from lib.env import CONFIG
 
-from lib.log import setupLogging, logConsole, logDiscord
+from lib.log import setup_logging, log_console, log_discord
 
-setupLogging()
-log = logConsole()
-logfile = logDiscord()
+setup_logging()
+log = log_console()
+logfile = log_discord()
 
 INTENTS = Intents.default()
 

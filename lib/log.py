@@ -1,6 +1,6 @@
 import logging
 
-def setupLogging():
+def setup_logging():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
     logger.propagate = False
@@ -8,7 +8,7 @@ def setupLogging():
     handler.setFormatter(logging.Formatter('[%(asctime)s]:[%(levelname)s]:: %(message)s', '%H:%M:%S'))
     logger.addHandler(handler)
 
-def logDiscord():
+def log_discord():
     logger = logging.getLogger('discord')
     logger.setLevel(logging.INFO)
     logger.propagate = False
@@ -17,6 +17,6 @@ def logDiscord():
     logger.addHandler(handler)
     return logger
 
-def logConsole():
+def log_console():
     logger = logging.getLogger(__name__)
     return logger
